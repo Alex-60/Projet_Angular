@@ -16,6 +16,8 @@
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/font-style.css" rel="stylesheet">
     <link href="assets/css/flexslider.css" rel="stylesheet">
+    
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 
@@ -40,6 +42,8 @@
     <!-- Google Fonts call. Font Used Open Sans & Raleway -->
     <link href="http://fonts.googleapis.com/css?family=Raleway:400,300" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -92,113 +96,119 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html"><i class="icon-home icon-white"></i> Accueil</a>
+                    <li class="active"><a href="accueil.html"><i class="icon-home icon-white"></i>Accueil</a>
                     </li>
-                    <li><a href="manager.html"><i class="icon-folder-open icon-white"></i> Profil</a>
+                    <li><a href="profil.html"><i class="icon-folder-open icon-white"></i>Profil</a>
                     </li>
-                    <li><a href="calendar.html"><i class="icon-calendar icon-white"></i> Ajouter des amis</a>
+                    <li><a href="ajouter_amis.html"><i class="icon-calendar icon-white"></i>Ajouter des amis</a>
                     </li>
-                    <li><a href="tables.html"><i class="icon-th icon-white"></i> Tchat</a>
+                    <li><a href="tchat.html"><i class="icon-th icon-white"></i> Tchat</a>
                     </li>
-                    <li><a href="login.html"><i class="icon-lock icon-white"></i> Evènement</a>
+                    <li><a href="evenement.html"><i class="icon-lock icon-white"></i> Evènement</a>
                     </li>
                 </ul>
             </div>
-            <!--/.nav-collapse -->
         </div>
     </div>
-
+     <!-- FIN NAVIGATION MENU -->
+    
     <div class="container">
 
         <!-- FIRST ROW OF BLOCKS -->
         <div class="row">
-
             <!-- USER PROFILE BLOCK -->
-            <div class="col-sm-3 col-lg-3">
+            <div class="col-sm-4 col-lg-4">
                 <div class="dash-unit-profil">
-                    <dtitle>User Profile</dtitle>
+                    <dtitle>Mon Profil</dtitle>
                     <hr>
                     <div class="thumbnail">
                         <img src="assets/img/face80x80.jpg" alt="Marcel Newman" class="img-circle">
-                    </div>
-                    <div class="info-user">
-                        <span aria-hidden="true" class="li_user fs1"></span>
-                        <span aria-hidden="true" class="li_settings fs1"></span>
-                        <span aria-hidden="true" class="li_mail fs1"></span>
-                        <span aria-hidden="true" class="li_key fs1"></span>
+                    </div><br>
+                    <div class="speudo">
+                        <p>@pplelien-75<br>
+                            Profil certifié
+                        </p>
+                    </div><br>
+                    <div class="info-profil">
+                        Alexandre Legros <br>
+                        25 ans - Paris <br>
+                        Originaire de chantilly<br>
+                        Ville actuelle Paris<br><br>
+                        Centre d'intérêts : <br>
+                        Sport - Technologies - Cinéma<br><br>
+                        Nombre d'amis : 45<br>
+                        Evènement participé : 12
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3 col-lg-3">
-                <div class="dash-unit">
-                    <dtitle>Latest News</dtitle>
+            <div class="col-sm-5 col-lg-5">
+                <div class="dash-unit-futur-event">
+                    <dtitle>Les évènements à venir</dtitle>
                     <hr>
-                    <div class="info-user">
-                        <span aria-hidden="true" class="li_news fs2"></span>
-                    </div>
-                    <br>
-                    <div class="text">
-                        <p><b>Alvarez.is:</b> A beautiful new Dashboard theme has been realised by Carlos Alvarez. Please, visit <a href="http://alvarez.is">Alvarez.is</a> for more details.</p>
-                        <p>
-                            <grey>Last Update: 5 minutes ago.</grey>
-                        </p>
-                    </div>
                 </div>
             </div>
             <div class="col-sm-3 col-lg-3">
-                <div class="dash-unit">
-                    <dtitle>Notifications</dtitle>
-                    <hr>
-                    <div class="info-user">
-                        <span aria-hidden="true" class="li_bubble fs2"></span>
-                    </div>
-                    <div class="cont">
-                        <p>
-                            <button class="btnnew noty" data-noty-options="{&quot;text&quot;:&quot;This is a success notification&quot;,&quot;layout&quot;:&quot;topRight&quot;,&quot;type&quot;:&quot;success&quot;}">Top Right</button>
-                        </p>
-                        <p>
-                            <button class="btnnew noty" data-noty-options="{&quot;text&quot;:&quot;This is an informaton notification&quot;,&quot;layout&quot;:&quot;topLeft&quot;,&quot;type&quot;:&quot;information&quot;}">Top Left</button>
-                        </p>
-                        <p>
-                            <button class="btnnew noty" data-noty-options="{&quot;text&quot;:&quot;This is an alert notification with fade effect.&quot;,&quot;layout&quot;:&quot;topCenter&quot;,&quot;type&quot;:&quot;alert&quot;,&quot;animateOpen&quot;: {&quot;opacity&quot;: &quot;show&quot;}}">Top Center (fade)</button>
-                        </p>
+                <div class="dash-unit-friend">
+                    <dtitle>Mes amis</dtitle>
+                    
+                        <div class="framemail">
+                            <div class="window">
+                                <ul class="mail">
+                                    <li>
+                                        <i class="unread"></i>
+                                        <img class="avatar" src="assets/img/photo01.jpeg" alt="avatar">
+                                        <p class="sender">Adam W.</p>
+                                    </li>
+                                    <li>
+                                        <i class="read"></i>
+                                        <img class="avatar" src="assets/img/photo02.jpg" alt="avatar">
+                                        <p class="sender">Dan E.</p>
+                                    </li>
+                                    <li>
+                                        <i class="read"></i>
+                                        <img class="avatar" src="assets/img/photo03.jpg" alt="avatar">
+                                        <p class="sender">Leonard N.</p>
+                                    </li>
+                                    <li>
+                                        <i class="read"></i>
+                                        <img class="avatar" src="assets/img/photo04.jpg" alt="avatar">
+                                        <p class="sender">Peter B.</p>
+                                    </li>
+                                    <li>
+                                        <i class="read"></i>
+                                        <img class="avatar" src="assets/img/photo04.jpg" alt="avatar">
+                                        <p class="sender">Peter B.</p>
+                                        <div class="actions">
+                                        <a>
+                                            <img src="assets/img/e_mail.png" alt="reply">
+                                        </a>
+                                        
+                                    </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-3 col-lg-3">
-                <!-- LOCAL TIME BLOCK -->
-                <div class="half-unit">
-                    <dtitle>Local Time</dtitle>
-                    <hr>
-                    <div class="clockcenter">
-                        <digiclock>12:45:25</digiclock>
+                <div class="col-sm-5 col-lg-5">
+                    <div class="dash-unit-event">
+                        <dtitle>Mes évènements</dtitle>
+                        <hr>
+                        <div class="text">
+
+                        </div>
                     </div>
                 </div>
-                <!-- LAST USER BLOCK -->
-                <div class="half-unit">
-                    <dtitle>Last Registered User</dtitle>
-                    <hr>
-                    <div class="cont2">
-                        <img src="assets/img/user-avatar.jpg" alt="">
-                        <br>
-                        <br>
-                        <p>Paul Smith</p>
-                        <p>
-                            <bold>Liverpool, England</bold>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 col-lg-3">
+                <div class="col-sm-3 col-lg-3">
                 <!-- MAIL BLOCK -->
-                <div class="dash-unit">
-                    <dtitle>Inbox (1)</dtitle>
-                    <hr>
+                <div class="dash-unit-messagerie">
+                    <dtitle>Messagerie</dtitle>
+                    
                     <div class="framemail">
                         <div class="window">
                             <ul class="mail">
                                 <li>
-                                    <i class="unread"></i>
+                                    <i class="unreada"></i>
                                     <img class="avatar" src="assets/img/photo01.jpeg" alt="avatar">
                                     <p class="sender">Adam W.</p>
                                     <p class="message"><strong>Working</strong> - This is the last...</p>
@@ -206,13 +216,7 @@
                                         <a>
                                             <img src="http://png-1.findicons.com/files//icons/2232/wireframe_mono/16/undo.png" alt="reply">
                                         </a>
-                                        <a>
-                                            <img src="http://png-1.findicons.com/files//icons/2232/wireframe_mono/16/star_fav.png" alt="favourite">
-                                        </a>
-                                        <a>
-                                            <img src="http://png-4.findicons.com/files//icons/2232/wireframe_mono/16/tag.png" alt="label">
-                                        </a>
-                                        <a>
+                                         <a>
                                             <img src="http://png-4.findicons.com/files//icons/2232/wireframe_mono/16/trash.png" alt="delete">
                                         </a>
                                     </div>
@@ -226,12 +230,7 @@
                                         <a>
                                             <img src="http://png-1.findicons.com/files//icons/2232/wireframe_mono/16/undo.png" alt="reply">
                                         </a>
-                                        <a>
-                                            <img src="http://png-1.findicons.com/files//icons/2232/wireframe_mono/16/star_fav.png" alt="favourite">
-                                        </a>
-                                        <a>
-                                            <img src="http://png-4.findicons.com/files//icons/2232/wireframe_mono/16/tag.png" alt="label">
-                                        </a>
+                                        
                                         <a>
                                             <img src="http://png-4.findicons.com/files//icons/2232/wireframe_mono/16/trash.png" alt="delete">
                                         </a>
@@ -246,12 +245,7 @@
                                         <a>
                                             <img src="http://png-1.findicons.com/files//icons/2232/wireframe_mono/16/undo.png" alt="reply">
                                         </a>
-                                        <a>
-                                            <img src="http://png-1.findicons.com/files//icons/2232/wireframe_mono/16/star_fav.png" alt="favourite">
-                                        </a>
-                                        <a>
-                                            <img src="http://png-4.findicons.com/files//icons/2232/wireframe_mono/16/tag.png" alt="label">
-                                        </a>
+                                        
                                         <a>
                                             <img src="http://png-4.findicons.com/files//icons/2232/wireframe_mono/16/trash.png" alt="delete">
                                         </a>
@@ -266,12 +260,22 @@
                                         <a>
                                             <img src="http://png-1.findicons.com/files//icons/2232/wireframe_mono/16/undo.png" alt="reply">
                                         </a>
+                                        
                                         <a>
-                                            <img src="http://png-1.findicons.com/files//icons/2232/wireframe_mono/16/star_fav.png" alt="favourite">
+                                            <img src="http://png-4.findicons.com/files//icons/2232/wireframe_mono/16/trash.png" alt="delete">
                                         </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="read"></i>
+                                    <img class="avatar" src="assets/img/photo04.jpg" alt="avatar">
+                                    <p class="sender">Peter B.</p>
+                                    <p class="message"><strong>Thank you</strong> - Finally I can ...</p>
+                                    <div class="actions">
                                         <a>
-                                            <img src="http://png-4.findicons.com/files//icons/2232/wireframe_mono/16/tag.png" alt="label">
+                                            <img src="http://png-1.findicons.com/files//icons/2232/wireframe_mono/16/undo.png" alt="reply">
                                         </a>
+                                        
                                         <a>
                                             <img src="http://png-4.findicons.com/files//icons/2232/wireframe_mono/16/trash.png" alt="delete">
                                         </a>
@@ -282,85 +286,101 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3 col-lg-3">
-                <div class="dash-unit">
-                    <dtitle>Switches</dtitle>
-                    <hr>
-                    <div class="info-user">
-                        <span aria-hidden="true" class="li_params fs2"></span>
-                    </div>
-                    <br>
-                    <div class="switch">
-                        <input type="radio" class="switch-input" name="view" value="on" id="on" checked="">
-                        <label for="on" class="switch-label switch-label-off">On</label>
-                        <input type="radio" class="switch-input" name="view" value="off" id="off">
-                        <label for="off" class="switch-label switch-label-on">Off</label>
-                        <span class="switch-selection"></span>
-                    </div>
-                    <div class="switch switch-blue">
-                        <input type="radio" class="switch-input" name="view2" value="week2" id="week2" checked="">
-                        <label for="week2" class="switch-label switch-label-off">Week</label>
-                        <input type="radio" class="switch-input" name="view2" value="month2" id="month2">
-                        <label for="month2" class="switch-label switch-label-on">Month</label>
-                        <span class="switch-selection"></span>
-                    </div>
-
-                    <div class="switch switch-yellow">
-                        <input type="radio" class="switch-input" name="view3" value="yes" id="yes" checked="">
-                        <label for="yes" class="switch-label switch-label-off">Yes</label>
-                        <input type="radio" class="switch-input" name="view3" value="no" id="no">
-                        <label for="no" class="switch-label switch-label-on">No</label>
-                        <span class="switch-selection"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 col-lg-3">
-                <div class="half-unit">
-                    <dtitle>Live Visitors</dtitle>
-                    <hr>
-                    <div class="cont">
-                        <p>
-                            <bold>388</bold>
-                        </p>
-                        <p>
-                            <img src="assets/img/up-small.png" alt="">412 Max. |
-                            <img src="assets/img/down-small.png" alt="">89 Min.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 col-lg-3">
-                <!-- TOTAL SUBSCRIBERS BLOCK -->
-                <div class="half-unit">
-                    <dtitle>Total Subscribers</dtitle>
-                    <hr>
-                    <div class="cont">
-                        <p>
-                            <bold>14.744</bold>
-                        </p>
-                        <p>98 Subscribed Today</p>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
-    <!-- /container -->
-    <div id="footerwrap">
-        <footer class="clearfix"></footer>
-        <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-lg-12">
-                    <p>
-                        <img src="assets/img/logo.png" alt="">
-                    </p>
-                    <p>Blocks Dashboard Theme - Crafted With Love - Copyright 2013</p>
+                <div class="col-sm-9 col-lg-9">
+                    <div class="dash-unit-create-event">
+                        <div class="form-group has-success">
+                            <dtitle>Créer Évènement</dtitle>
+                            
+                                <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+                                    <div class="bloc_create_event">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                            <input  name="first_name" placeholder="Nom de l'évènement" class="form-control"  type="text">
+                                        </div>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                            <input name="address" placeholder="Adresse" class="form-control" type="text">
+                                        </div>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>        
+                                            <input name="zip" placeholder="Code Postal" class="form-control"  type="text">
+                                        </div>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                            <input name="city" placeholder="Ville" class="form-control"  type="text">
+                                        </div>
+                                        <div class='input-group date' id='datetimepicker1'>
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span> </span>
+                                            <input type='text' class="form-control" placeholder="Date de l'évènement" />
+                                                <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+                                           
+                                        </div>
+                                     </div>
+                                    <div class="description-event">
+                                         <div class="input-group">
+                                             
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                            <textarea class="form-control" name="comment" placeholder="Description de l'évènement"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-lg-3">
+                        <div class="dash-unit-match">
+                            <dtitle>Vos futurs amis</dtitle>
+                            <div class="framemail">
+                            <div class="window">
+                                <ul class="mail">
+                                    <li>
+                                        <i class="unread"></i>
+                                        <img class="avatar" src="assets/img/photo01.jpeg" alt="avatar">
+                                        <p class="sender">Adam W.<br>
+                                        Match à 90% - +</p>
+                                    </li>
+                                    <li>
+                                        <i class="read"></i>
+                                        <img class="avatar" src="assets/img/photo02.jpg" alt="avatar">
+                                        <p class="sender">Dan E.</p>
+                                    </li>
+                                    <li>
+                                        <i class="read"></i>
+                                        <img class="avatar" src="assets/img/photo03.jpg" alt="avatar">
+                                        <p class="sender">Leonard N.</p>
+                                    </li>
+                                    <li>
+                                        <i class="read"></i>
+                                        <img class="avatar" src="assets/img/photo04.jpg" alt="avatar">
+                                        <p class="sender">Peter B.</p>
+                                    </li>
+                                    <li>
+                                        <i class="read"></i>
+                                        <img class="avatar" src="assets/img/photo04.jpg" alt="avatar">
+                                        <p class="sender">Peter B.</p>
+                                        <div class="actions">
+                                        <a>
+                                            <img src="assets/img/e_mail.png" alt="reply">
+                                        </a>
+                                        
+                                    </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
-
             </div>
-            <!-- /row -->
-        </div>
-        <!-- /container -->
-    </div>
-    <!-- /footerwrap -->
 
 
     <!-- Le javascript
@@ -387,6 +407,8 @@
 
     <script type="text/javascript" src="assets/js/admin.js"></script>
 
+    
+    
 </body>
 
 </html>
