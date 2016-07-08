@@ -63,13 +63,15 @@ body {
     }
     .connexion2 a{
         color: #fff;
+        width: 100%;
+        display: block;
+        padding: 10px;
     }
     .connexion2{
         min-width: 100%;
         height: 40px;
         background-color: rgba(85, 85, 85, 0.8);
         color: #fff;
-        padding: 10px;
         border-radius: 3px;
         font-size: 15px;
         margin: auto;
@@ -193,6 +195,8 @@ body {
     }
     .connexion2 a{
         color: #fff;
+        width: 100%;
+        display: block;
     }
     .connexion2{
         min-width: 100%;
@@ -284,4 +288,39 @@ body {
     .btnConnexion2{
         margin: 30px auto;
     }
+}
+
+.containerSocial div, .containerSocialConnexion div{
+    padding: 0;
+}
+.containerSocial{
+    width: 300px;
+    margin: auto;
+}
+.containerSocialConnexion{
+    width: 300px;
+    margin: 10px auto auto auto;
+}
+.logoFacebook{
+    width: 140px;
+    height: 36px;
+    background-size: 140px 36px;
+    background-image: url("../img/logo_facebook.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.logoFacebook:hover{
+    background-image: url("../img/logo_facebook_hover.png");
+}
+.logoGoogle{
+    width: 140px;
+    height: 36px;
+    background-size: 140px 36px;
+    background-image: url("../img/logo_google.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    float: right;
+}
+.logoGoogle:hover{
+    background-image: url("../img/logo_google_hover.png");
 }
