@@ -28,6 +28,39 @@
     <link href="http://fonts.googleapis.com/css?family=Raleway:400,300" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
 
+    <style>
+        .containerSocial div{
+            padding: 0;
+        }
+        .containerSocial{
+            width: 300px;
+            margin: auto;
+        }
+        .logoFacebook{
+            width: 140px;
+            height: 36px;
+            background-size: 140px 36px;
+            background-image: url("assets/img/logo_facebook.png");
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+        .logoFacebook:hover{
+            background-image: url("assets/img/logo_facebook_hover.png");
+        }
+        .logoGoogle{
+            width: 140px;
+            height: 36px;
+            background-size: 140px 36px;
+            background-image: url("assets/img/logo_google.png");
+            background-repeat: no-repeat;
+            cursor: pointer;
+            float: right;
+        }
+        .logoGoogle:hover{
+            background-image: url("assets/img/logo_google_hover.png");
+        }
+    </style>
+
 </head>
 
 <body>
@@ -66,14 +99,22 @@
             <div class="col-sm-3 col-lg-4">
             </div>
             <div class="col-sm-6 col-lg-4">
+                <div class="row containerSocial">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <div class="logoFacebook"></div>
+                    </div>
+                    <div class="col-xs-6 col-md-6 col-lg-6">
+                        <div class="logoGoogle"></div>
+                    </div>
+                </div>
                 <div class="register_form">
                     <form data-type="form-page">
                         <div class="inputRegister">
-                           <div class="form-group">
+                            <div class="form-group">
                                 <input id="pseudo" class="form-control" placeholder="Pseudo" type="text" value="" />
                             </div>
                             <div class="form-group">
-                                <input id="" class="form-control" placeholder="Adresse email" type="text"/>
+                                <input id="" class="form-control" placeholder="Adresse email" type="text" />
                             </div>
                             <div class="form-group">
                                 <input id="inputMdp" class="form-control" placeholder="Mot de passe" type="password" />
@@ -81,9 +122,6 @@
                             <div class="form-group">
                                 <input id="confMdp" class="form-control" placeholder="Confirmation mot de passe" type="password" />
                             </div>
-                            
-            
-                            
                         </div>
                         <div class="index-form-submit">
                             <button class="btn btn-primary btn-large btn-block" id="btnInscription" type="submit">
