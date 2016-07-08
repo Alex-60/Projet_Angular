@@ -324,3 +324,14 @@ body {
 .logoGoogle:hover{
     background-image: url("../img/logo_google_hover.png");
 }
+.mdpOublie, .mdpOublie a{
+    text-align: center;
+    color: #fff;
+    text-decoration: underline;
+    margin: 10px;
+}
+.rememberMe{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 5px;
+}
