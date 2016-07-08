@@ -66,59 +66,11 @@ h5 {
 	margin-bottom: 30px;
 	padding-bottom:10px;
 	/*background-image:url('../img/sep-half.png');*/
-	background-color: #262626;
+	background-color: #F3ECDB;
 	color:white;
 	height:610px;
 }
-.dash-unit-event {		
-	margin-bottom: 30px;
-	padding-bottom:10px;
-	/*background-image:url('../img/sep-half.png');*/
-	background-color: #F36D4C;
-	color:white;
-	height:290px;
-}
-.dash-unit-futur-event {		
-	margin-bottom: 30px;
-	padding-bottom:10px;
-	/*background-image:url('../img/sep-half.png');*/
-	background-color: #F3C15C;
-	color:white;
-	height:290px;
-}
-.dash-unit-friend {		
-	margin-bottom: 30px;
-	padding-bottom:10px;
-	/*background-image:url('../img/sep-half.png');*/
-	background-color:#F36D4C;
-;
-	color:white;
-	height:290px;
-}
-.dash-unit-messagerie {		
-	margin-bottom: 30px;
-	padding-bottom:10px;
-	/*background-image:url('../img/sep-half.png');*/
-	background-color: #F3ECDB;
-	color:white;
-	height:290px;
-}
-.dash-unit-match {		
-	margin-bottom: 30px;
-	padding-bottom:10px;
-	/*background-image:url('../img/sep-half.png');*/
-	background-color: #5CA48D;
-	color:white;
-	height:290px;
-}
-.dash-unit-create-event {		
-	margin-bottom: 30px;
-	padding-bottom:10px;
-	/*background-image:url('../img/sep-half.png');*/
-	background-color: #262626;
-	color:white;
-	height:290px;
-}
+
 
 .dash-unit dtitle {
 	font-size:11px;
