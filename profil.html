@@ -18,6 +18,10 @@
     <link href="assets/css/flexslider.css" rel="stylesheet">
     
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 
@@ -213,12 +217,11 @@
                                     <p class="sender">Adam W.</p>
                                     <p class="message"><strong>Working</strong> - This is the last...</p>
                                     <div class="actions">
-                                        <a>
+                                       <div class="cont">
+                                        <a href="#myModal" role="button" class="btnnew" data-toggle="modal">
                                             <img src="http://png-1.findicons.com/files//icons/2232/wireframe_mono/16/undo.png" alt="reply">
                                         </a>
-                                         <a>
-                                            <img src="http://png-4.findicons.com/files//icons/2232/wireframe_mono/16/trash.png" alt="delete">
-                                        </a>
+                                        </div>  
                                     </div>
                                 </li>
                                 <li>
@@ -231,9 +234,7 @@
                                             <img src="http://png-1.findicons.com/files//icons/2232/wireframe_mono/16/undo.png" alt="reply">
                                         </a>
                                         
-                                        <a>
-                                            <img src="http://png-4.findicons.com/files//icons/2232/wireframe_mono/16/trash.png" alt="delete">
-                                        </a>
+                                        
                                     </div>
                                 </li>
                                 <li>
@@ -246,9 +247,6 @@
                                             <img src="http://png-1.findicons.com/files//icons/2232/wireframe_mono/16/undo.png" alt="reply">
                                         </a>
                                         
-                                        <a>
-                                            <img src="http://png-4.findicons.com/files//icons/2232/wireframe_mono/16/trash.png" alt="delete">
-                                        </a>
                                     </div>
                                 </li>
                                 <li>
@@ -260,10 +258,6 @@
                                         <a>
                                             <img src="http://png-1.findicons.com/files//icons/2232/wireframe_mono/16/undo.png" alt="reply">
                                         </a>
-                                        
-                                        <a>
-                                            <img src="http://png-4.findicons.com/files//icons/2232/wireframe_mono/16/trash.png" alt="delete">
-                                        </a>
                                     </div>
                                 </li>
                                 <li>
@@ -274,10 +268,6 @@
                                     <div class="actions">
                                         <a>
                                             <img src="http://png-1.findicons.com/files//icons/2232/wireframe_mono/16/undo.png" alt="reply">
-                                        </a>
-                                        
-                                        <a>
-                                            <img src="http://png-4.findicons.com/files//icons/2232/wireframe_mono/16/trash.png" alt="delete">
                                         </a>
                                     </div>
                                 </li>
@@ -293,22 +283,23 @@
                         <div class="form-group has-success">
                             <dtitle>Créer Évènement</dtitle>
                             
-                                <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+                                <!--<form class="well form-horizontal" action=" " method="post"  id="contact_form">-->
+                                   <form class="formulaire-event" action=" " method="post"  id="contact_form">
                                     <div class="bloc_create_event">
                                         <div class="input-group">
-                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-info-sign"></i></span>
                                             <input  name="first_name" placeholder="Nom de l'évènement" class="form-control"  type="text">
                                         </div>
                                         <div class="input-group">
-                                            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                                            <input name="address" placeholder="Adresse" class="form-control" type="text">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
+                                            <input name="address" placeholder="Adresse de l'évènement" class="form-control" type="text">
                                         </div>
                                         <div class="input-group">
-                                            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>        
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>        
                                             <input name="zip" placeholder="Code Postal" class="form-control"  type="text">
                                         </div>
                                         <div class="input-group">
-                                            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
                                             <input name="city" placeholder="Ville" class="form-control"  type="text">
                                         </div>
                                         <div class='input-group date' id='datetimepicker1'>
@@ -330,7 +321,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+                                        <p class="button_formulaire"> <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button></p>
                                     </div>
                                 </form>
                             </div>
@@ -407,7 +398,11 @@
 
     <script type="text/javascript" src="assets/js/admin.js"></script>
 
-    
+    <script>
+    $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+    </script>
     
 </body>
 

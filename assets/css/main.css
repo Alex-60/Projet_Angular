@@ -66,11 +66,90 @@ h5 {
 	margin-bottom: 30px;
 	padding-bottom:10px;
 	/*background-image:url('../img/sep-half.png');*/
-	background-color: #F3ECDB;
+	background-color: #262626;
 	color:white;
 	height:610px;
+     font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    text-align: center;
 }
 
+.create_event-profil{
+       width: 46%;   
+    }
+.button-formulaire{
+    text-align: center;
+}
+.bloc_create_event{
+    float: left;
+    width: 46%;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+.description-event{
+    
+    width: 46%;
+    float: left;
+    margin-left: 2%;
+    margin-top: 1%;
+    height: 215px;
+
+    
+}
+.bloc_create_event input[type="text"], textarea{
+    background: #ffffff;
+}
+.description-event
+
+.dash-unit-event {		
+	margin-bottom: 30px;
+	padding-bottom:10px;
+	/*background-image:url('../img/sep-half.png');*/
+	background-color: #F36D4C;
+	color:white;
+	height:290px;
+}
+.dash-unit-futur-event {		
+	margin-bottom: 30px;
+	padding-bottom:10px;
+	/*background-image:url('../img/sep-half.png');*/
+	background-color: #F3C15C;
+	color:white;
+	height:290px;
+}
+.dash-unit-friend {		
+	margin-bottom: 30px;
+	padding-bottom:10px;
+	/*background-image:url('../img/sep-half.png');*/
+	background-color:#F36D4C;
+;
+	color:white;
+	height:290px;
+}
+.dash-unit-messagerie {		
+	margin-bottom: 30px;
+	padding-bottom:10px;
+	/*background-image:url('../img/sep-half.png');*/
+	background-color: #F3ECDB;
+	color:white;
+	height:290px;
+}
+.dash-unit-match {		
+	margin-bottom: 30px;
+	padding-bottom:10px;
+	/*background-image:url('../img/sep-half.png');*/
+	background-color: #5CA48D;
+	color:white;
+	height:290px;
+}
+.dash-unit-create-event {		
+	margin-bottom: 30px;
+	padding-bottom:10px;
+	/*background-image:url('../img/sep-half.png');*/
+	background-color: #F3C15C;
+	color:white;
+	height:290px;
+}
 
 .dash-unit dtitle {
 	font-size:11px;
@@ -375,9 +454,9 @@ digiclock {
 }
 .framemail .window {
     font-size: 0;
-    margin-top: -1px;
+    margin-top: 30px;
     overflow: hidden;
-    margin-left: -18px;
+    margin-left: -19px;
 }
 .framemail .window .mail li {
     /*background-color:#3d3d3d;*/
@@ -388,7 +467,7 @@ digiclock {
     background-image:         linear-gradient(hsla(0,0%,100%,.05), hsla(0,0%,0%,.05));
    /* border-top: 1px solid #888;*/
     position: relative;
-    margin-left:-18px;
+    margin-left:-20px;
 }
 .framemail .window .mail li:first-child {
     border-top: none;
@@ -398,7 +477,7 @@ digiclock {
 }
 .framemail .window .mail li:after,
 .framemail .window .mail li:before {
-    border-left: 8px solid transparent;
+    /*border-left: 8px solid transparent;*/
     border-top: 8px solid #df6;
     content: '';
     height: 0;
@@ -415,13 +494,11 @@ digiclock {
 .framemail .window .mail li:nth-child(1):before {
     border: none;
 }
-.framemail .window .mail li:nth-child(2):after {
-    border-top-color: #fa1d2d;
-}
+
 .framemail .window .mail li i {
     display: inline-block;
     height: 48px;
-    width: 6px;
+   /* width: 6px;*/
 }
 .framemail .window .mail li .read {
     background-color: #ddd;
@@ -433,7 +510,7 @@ digiclock {
     background: #819da2;
     border-radius: 2px;
     height: 36px;
-    left: 12px;
+    /*left: 12px;*/
     position: absolute;
     top: 6px;
     width: 36px;
@@ -446,7 +523,7 @@ digiclock {
 }
 .framemail .window .mail li .sender {
     color: #e9e8e8;
-    font-weight: bold;
+    
     text-shadow: 0 1px 1px hsla(0,0%,100%,.5);
 }
 .framemail .window .mail li .message {
@@ -864,3 +941,4 @@ a:hover {
 }
 
 }
+    
