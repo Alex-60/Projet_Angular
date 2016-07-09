@@ -96,8 +96,9 @@ h5 {
 .input-group-description {
   position: relative;
   display: table;
-  border-collapse: separate;
-  margin-top: 10px;
+    border-collapse: separate;
+    margin-top: 10px;
+    height: 236px;
     
 }
 .form-control-description {
@@ -115,20 +116,14 @@ h5 {
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
           transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-    height: 190px;
+    height: 236px;
+    margin: 0px;
 }
 
 .bloc_create_event input[type="text"], textarea{
     background: #ffffff;
 }
 
-ul{
-    list-style:none;
-margin-left:0;
-padding-left:0;
-text-align: center;
-    margin-top: 10px;
-}
 .dash-unit-event {		
 	margin-bottom: 30px;
 	padding-bottom:10px;
@@ -154,6 +149,15 @@ text-align: center;
 	height:290px;
 }
 .btn-ajout-friend{
+    margin-top: 10px;
+}
+.ajouter-friend{
+    list-style-type: none;
+    text-align: center;
+    margin-left:0;
+    padding-left:0;
+}
+.ajouter-friend img{
     margin-top: 10px;
 }
 .sender{
@@ -192,8 +196,8 @@ text-align: center;
 	height:385px;
 }
 .button-envoi{
-    margin-top: 50px;
-    margin-left: -80px;
+    margin-top: 25px;
+    margin-left: 322px;
 }
 .info-event{
     width: 100%;
