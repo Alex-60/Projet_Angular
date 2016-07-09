@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>BLOCKS - Bootstrap Dashboard Theme</title>
+    <title>#FuturPote</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="Carlos Alvarez - Alvarez.is">
+    
 
     <!-- Font -->
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
@@ -41,6 +41,9 @@
     <link href="http://fonts.googleapis.com/css?family=Raleway:400,300" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    
+    
+    <link href='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js'>
 </head>
 
 <body>
@@ -64,8 +67,6 @@
                     </li>
                     <li><a href="ajouter_amis.html"><i class="icon-calendar icon-white"></i>Ajouter des amis</a>
                     </li>
-                    <li><a href="tchat.html"><i class="icon-th icon-white"></i> Tchat</a>
-                    </li>
                     <li><a href="evenement.html"><i class="icon-lock icon-white"></i> Evènement</a>
                     </li>
                 </ul>
@@ -77,12 +78,18 @@
     <div class="container">
         <!-- FIRST ROW OF BLOCKS -->
         <div class="row">
+           <input type="search" ng-model="filtre">
+                <ul>
+                    <li ng-repeat="element in tableau | filter : filtre">{{element}}</li>
+                </ul> 
+        </div>
+        <div class="row">
             <div class="col-sm-3 col-lg-3">
                 <div class="dash-unit-ajout-friend">
                     <div class="title-bloc">
                         <dtitle>Match à </dtitle>
                     </div>
-                        <ul class="mail">
+                        <ul class="ajouter-friend">
                             <li>
                                 <i class="unread"></i>
                                     <img class="avatar" src="assets/img/photo01.jpeg" alt="avatar">
@@ -104,7 +111,7 @@
                     <div class="title-bloc">
                         <dtitle>Match à </dtitle>
                     </div>
-                        <ul class="mail">
+                        <ul class="ajouter-friend">
                             <li>
                                 <i class="unread"></i>
                                     <img class="avatar" src="assets/img/photo01.jpeg" alt="avatar">
@@ -126,7 +133,7 @@
                     <div class="title-bloc">
                         <dtitle>Match à </dtitle>
                     </div>
-                        <ul class="mail">
+                        <ul class="ajouter-friend">
                             <li>
                                 <i class="unread"></i>
                                     <img class="avatar" src="assets/img/photo01.jpeg" alt="avatar">
@@ -148,7 +155,7 @@
                     <div class="title-bloc">
                         <dtitle>Match à </dtitle>
                     </div>
-                        <ul class="mail">
+                        <ul class="ajouter-friend">
                             <li>
                                 <i class="unread"></i>
                                     <img class="avatar" src="assets/img/photo01.jpeg" alt="avatar">
