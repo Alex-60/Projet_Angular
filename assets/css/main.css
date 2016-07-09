@@ -151,14 +151,22 @@ h5 {
 .btn-ajout-friend{
     margin-top: 10px;
 }
+.img-profil{
+    margin-top: 10px;
+}
 .ajouter-friend{
     list-style-type: none;
     text-align: center;
-    margin-left:0;
-    padding-left:0;
+    margin-left: 0;
+    padding-left: 0;
+    width: 215px;
+    display: block;
+    margin: auto;
 }
 .ajouter-friend img{
     margin-top: 10px;
+    width: 65px;
+    border-radius: 50px;
 }
 .sender{
     margin-top: 10px;
@@ -169,7 +177,7 @@ h5 {
 	/*background-image:url('../img/sep-half.png');*/
 	background-color:#F36D4C;
 	color:white;
-	height:250px;
+	height:280px;
 }
 .dash-unit-messagerie {		
 	margin-bottom: 30px;
