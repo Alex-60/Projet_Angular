@@ -1,0 +1,132 @@
+.div_events{
+
+
+    height: auto;
+    
+      text-align:center;
+    padding: 5px;
+
+}
+
+.div_events h2{
+
+    
+    text-align: center;
+    background: #F36D4C;
+    color: white;
+ 
+   
+   
+  
+    text-align:center;
+    padding: 20px;
+      text-align:center;
+    
+}
+
+
+.div_events2 h2{
+
+   
+    text-align: center;
+    background: #F36D4C;
+    color: white;
+   
+   
+  
+    text-align:center;
+    padding: 20px;
+    
+    
+}
+
+
+
+.div_events2{
+
+
+    height: 500px;
+      text-align:center;
+    
+}
+
+.block_events{
+
+
+    height: 250px;
+     text-align:center;
+    margin-bottom: 20px;
+    background: ThreeDFace;
+}
+
+.block_events_date {
+
+
+    height: auto;
+    text-align: center;
+    margin-top: 20px;
+    
+
+
+ 
+
+}
+
+.date{
+
+    background: darkslateblue;
+    color: white;
+    margin-top: 10px;
+        height: 80px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+
+}
+
+.block_events_info{
+
+    border: 1px solid black;
+    height:auto;
+     margin-top: 20px;
+    background: darkslateblue;
+    color: white;
+   padding: 10px;
+        font-size: 1.2em;
+
+
+}
+
+.block_events_info p{
+
+
+
+    text-align: center;
+  
+
+
+}
+
+.block_events_tchat{
+
+    border: 1px solid ThreeDFace;
+    height: 150px;
+      text-align:center;
+    background: ThreeDFace;
+    font-size: 1.2em;
+    color: white;
+    
+ 
+}
+
+.block_events_tchat_x{
+
+    
+border: 1px solid black;
+    height: 120px;
+      text-align:center;
+     margin-top: 20px;
+     background: darkslateblue;
+    padding-top: 10px;
+
+}
+
