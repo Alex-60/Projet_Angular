@@ -1,0 +1,333 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>#FuturPote</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Carlos Alvarez - Alvarez.is">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/font-style.css" rel="stylesheet">
+    <link href="assets/css/index.css" rel="stylesheet">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Google Fonts call. Font Used Open Sans & Raleway -->
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,300" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+    
+    <style>
+        body {
+            /*            padding-top: 60px;*/
+            max-width: 100%;
+            height: auto;
+            background-attachment: fixed;
+            background: none;
+            background-size: cover;
+        }
+        .container{
+            width: 100%;
+            padding: 0;
+        }
+        .row{
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .noMarginNoPadding{
+            padding: 0;
+            margin: 0;
+        }
+        .sloganConcept{
+            margin-top: 30px;
+            font-size: 45px;
+            text-align: center;
+            color: #fff;
+        }
+        @media (max-width: 767px) {
+            .inscriptionConcept{
+                display: none;
+            }
+        }
+        @media (min-width: 768px) {
+            .inscriptionConcept, .inscriptionConcept:active {
+                width: 102px;
+                height: 40px;
+                background-color: rgba(92, 164, 141, 0.8);
+                color: #fff;
+                padding: 10px;
+                border-radius: 3px;
+                font-size: 15px;
+                margin: 30px 0 0 15px;
+                float: left;
+                font-weight: 600;
+                text-decoration: none;
+            }
+            .inscriptionConcept:hover, .inscriptionConcept:visited{
+                background-color: rgba(92, 164, 141, 1);
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+        .container{
+            width: 100%;
+            padding: 0;
+        }
+        .bandeau1{
+            margin: 0;
+            max-width: 100%;
+            min-height: 450px;
+            height: auto;
+            background: rgba(0, 0, 0, 0) url("assets/img/accueil_gris.png") no-repeat scroll top center / cover ;
+        }
+        .image1{
+            margin: 0;
+            max-width: 100%;
+            min-height: 400px;
+            height: auto;
+            padding: 0;
+            background: rgba(0, 0, 0, 0) url("assets/img/rencontrer.jpg") no-repeat scroll top center / cover ;
+        }
+        .image2{
+            margin: 0;
+            max-width: 100%;
+            min-height: 400px;
+            height: auto;
+            padding: 0;
+            background: rgba(0, 0, 0, 0) url("assets/img/discuter.jpg") no-repeat scroll top center / cover ;
+        }
+        .image3{
+            margin: 0;
+            max-width: 100%;
+            min-height: 400px;
+            height: auto;
+            padding: 0;
+            background: rgba(0, 0, 0, 0) url("assets/img/Participer.jpeg") no-repeat scroll top center / cover ;
+        }
+        .image4{
+            margin: 0;
+            max-width: 100%;
+            min-height: 400px;
+            height: auto;
+            padding: 0;
+            background: rgba(0, 0, 0, 0) url("assets/img/creer_event.jpg") no-repeat scroll top center / cover ;
+        }
+        .image5{
+            margin: 0;
+            max-width: 100%;
+            min-height: 400px;
+            height: auto;
+            padding: 0;
+            background: rgba(0, 0, 0, 0) url("assets/img/cercle_amis.jpg") no-repeat scroll top center / cover ;
+        }
+        .inscriptionConcept a{
+            color: #fff;
+            width: 100%;
+            display: block;
+        }
+        .inscriptionConcept{
+            min-width: 100%;
+            height: 40px;
+            background-color: rgba(92, 164, 141, 0.8);
+            color: #fff;
+            padding: 10px;
+            border-radius: 3px;
+            font-size: 15px;
+            margin: auto auto 20px auto;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: center;
+            display: block;
+        }
+        .inscriptionConcept:hover {
+            background-color: rgba(92, 164, 141, 1);
+            color: #fff;
+        }
+        
+        .connexionConcept a{
+            color: #fff;
+            width: 100%;
+            display: block;
+        }
+        .connexionConcept{
+            min-width: 100%;
+            height: 40px;
+            background-color: rgba(85, 85, 85, 0.8);
+            color: #fff;
+            padding: 10px;
+            border-radius: 3px;
+            font-size: 15px;
+            margin: auto auto 20px auto;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+        }
+        .connexionConcept:hover {
+            background-color: rgb(41, 41, 41);
+            color: #fff;
+        }
+        .blocTxt1{
+            margin: 110px 0;
+        }
+        h2{
+            text-align: center;
+            font-size: 35px;
+            font-weight: 300;
+        }
+        .blocTxt1 p{
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVIGATION MENU -->
+    <div class="container">
+        <div class="row bandeau1">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-2 col-md-3 col-lg-4">
+<!--                        <a class="inscriptionConcept" href="index.html">Inscription</a>-->
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4">
+                        <p class="logoAccueil"><img src="assets/img/logo_futur_pote_blanc.png" alt=""></p>
+                    </div>
+                    <div class="col-xs-12 col-sm-2 col-md-3 col-lg-4">
+<!--                        <a class="connexion" href="login.html">Connexion</a>-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-lg-12">
+                        <p class="sloganConcept">Découvrez #FuturPote</p>
+                        <p class="slogan2">FAITES VOUS DE NOUVEAUX AMIS</p>
+                        <div class="register_form">
+                                <div>
+                                    <span class="inscriptionConcept"><a  href="index.html">Inscription</a></span>
+                                </div>
+                                <div>
+                                    <span class="connexionConcept"><a  href="login.html">Connexion</a></span>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarginNoPadding">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blocTxt1">
+                                <h2>RENCONTREZ</h2>
+                                <p>Je réalise mes études dans un autre ville et je souhaite rencontrer du monde. J’utilise le système de match pour rencontrer les personnes qui me correspondent.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 image1">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarginNoPadding">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 image2">
+                        
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blocTxt1">
+                                <h2>DISCUTEZ</h2>
+                                <p>Je discute avec les gens qui me correspondent.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarginNoPadding">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blocTxt1">
+                                <h2>PARTICIPEZ AUX ÉVÈNEMENTS</h2>
+                                <p>Je m’inscris au évènements proposée.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 image3">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarginNoPadding">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 image4">
+                        
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blocTxt1">
+                                <h2>CRÉEZ DES ÉVÈNEMENTS</h2>
+                                <p>Je discute avec les gens qui me correspondent.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarginNoPadding">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blocTxt1">
+                                <h2>CRÉEZ VOS CERCLES D'AMIS</h2>
+                                <p>Je créé ainsi mon cercle d’ami facilement et en toute sécurité.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 image5">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+</body>
+</html>
