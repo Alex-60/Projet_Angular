@@ -148,6 +148,18 @@ h5 {
 	color:white;
 	height:290px;
 }
+.editer-profile{
+    margin-top: 10px;
+    
+}
+.editer-profile a{
+text-decoration:none;
+    color: black;
+}
+.editer-profile a:hover{
+text-decoration:none;
+    color: black;
+}
 .btn-ajout-friend{
     margin-top: 10px;
 }
