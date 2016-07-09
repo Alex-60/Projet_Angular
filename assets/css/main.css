@@ -229,6 +229,10 @@ text-decoration:none;
 .ajouter-match{
     float: right;
 }
+.nb-users{
+ width: 10px;
+    margin-left: -1px;
+}
 .info-event-bloc-2{
     width: 48%;
     margin-left: 2%;
@@ -578,9 +582,9 @@ digiclock {
 .framemail .window .mail li:first-child {
     border-top: none;
 }
-.framemail .window .mail li:hover {
+/*.framemail .window .mail li:hover {
     background-color: #fff;
-}
+}*/
 .framemail .window .mail li:after,
 .framemail .window .mail li:before {
     /*border-left: 8px solid transparent;*/
@@ -620,6 +624,8 @@ digiclock {
     position: absolute;
     top: 6px;
     width: 36px;
+    border-radius: 50px;
+    margin-left: 3px;
 }
 .framemail .window .mail li p {
     font: 13px/24px sans-serif;
@@ -656,6 +662,7 @@ digiclock {
     opacity: .1;
     position: relative;
     width: 20px;
+    margin-top: 9px;
 }
 .framemail .window .mail li:hover .actions img {
     opacity: .25;
