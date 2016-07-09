@@ -533,7 +533,7 @@ digiclock {
     border-top: none;
 }
 .framemail .window .mail li:hover {
-    background-color: #5d5b5b;
+    background-color: #fff;
 }
 .framemail .window .mail li:after,
 .framemail .window .mail li:before {

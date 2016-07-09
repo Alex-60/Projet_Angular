@@ -30,11 +30,6 @@
         }
     </style>
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
@@ -46,47 +41,11 @@
     <link href="http://fonts.googleapis.com/css?family=Raleway:400,300" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-
-            $("#btn-blog-next").click(function () {
-                $('#blogCarousel').carousel('next')
-            });
-            $("#btn-blog-prev").click(function () {
-                $('#blogCarousel').carousel('prev')
-            });
-
-            $("#btn-client-next").click(function () {
-                $('#clientCarousel').carousel('next')
-            });
-            $("#btn-client-prev").click(function () {
-                $('#clientCarousel').carousel('prev')
-            });
-
-        });
-
-        $(window).load(function () {
-
-            $('.flexslider').flexslider({
-                animation: "slide",
-                slideshow: true,
-                start: function (slider) {
-                    $('body').removeClass('loading');
-                }
-            });
-        });
-    </script>
-
-
-
 </head>
 
 <body>
 
     <!-- NAVIGATION MENU -->
-
     <div class="navbar-nav navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -116,29 +75,27 @@
     <!-- FIN NAVIGATION MENU -->
 
     <div class="container">
-
         <!-- FIRST ROW OF BLOCKS -->
         <div class="row">
             <!-- USER PROFILE BLOCK -->
             <div class="col-sm-4 col-lg-4">
                 <div class="dash-unit-profil">
                    <div class="title-bloc">
-                       <dtitle>Mon Profil</dtitle>
-                   </div>
-                    
+                        <dtitle>Mon Profil</dtitle>
+                    </div>
                     <div class="thumbnail">
                         <img src="assets/img/face80x80.jpg" alt="Marcel Newman" class="img-circle">
                     </div>
                     <br>
                     <div class="speudo">
-                        <p>@pplelien-75
-                            <br>Profil certifié
+                        <p>Speudo<br>
+                            Profil certifié
                         </p>
                     </div>
                     <br>
                     <div class="info-profil">
-                        Alexandre Legros
-                        <br>25 ans - Paris
+                        Prenom Nom
+                        <br>Age ans 
                         <br>Originaire de chantilly
                         <br>Ville actuelle Paris
                         <br>
@@ -176,7 +133,7 @@
                             Date de l'évènement<br>
                             Nombre de place<br>
                         </div>
-                            <button class="btn-rejoindre-event">Rejoindre l'évènement</button>
+                            <button class="btnnew noty" data-noty-options="{text:This is an alert notification with fade effect;layout:topCenter;type:alert;animateOpen;: {opacity;: &quot;show;}}">Top Center (fade)</button>
                             <div class="trait-event" ></div>  
                       </div>
                 </div>
@@ -186,7 +143,6 @@
                     <div class="title-bloc">
                         <dtitle>Mes amis</dtitle>
                     </div>
-
                     <div class="framemail">
                         <div class="window">
                             <ul class="mail">
@@ -238,8 +194,6 @@
                                         <a>
                                             <img src="http://png-1.findicons.com/files//icons/2232/wireframe_mono/16/undo.png" alt="reply">
                                         </a>
-
-
                                     </div>
                                 </li>
                             </ul>
@@ -293,11 +247,9 @@
                                     <p class="sender">Adam W.</p>
                                     <p class="message"><strong>Working</strong> - This is the last...</p>
                                     <div class="actions">
-                                        
-                                            <a>
-                                                <img src="http://png-1.findicons.com/files//icons/2232/wireframe_mono/16/undo.png" alt="reply">
-                                            </a>
-                                        
+                                        <a>
+                                            <img src="http://png-1.findicons.com/files//icons/2232/wireframe_mono/16/undo.png" alt="reply">
+                                        </a>
                                     </div>
                                 </li>
                                 <li>
@@ -309,8 +261,6 @@
                                         <a>
                                             <img src="http://png-1.findicons.com/files//icons/2232/wireframe_mono/16/undo.png" alt="reply">
                                         </a>
-
-
                                     </div>
                                 </li>
                                 <li>
@@ -322,7 +272,6 @@
                                         <a>
                                             <img src="http://png-1.findicons.com/files//icons/2232/wireframe_mono/16/undo.png" alt="reply">
                                         </a>
-
                                     </div>
                                 </li>
                                 <li>
@@ -380,19 +329,19 @@
                                     <span class="input-group-addon">
                                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                                     </span> 
-                                    <input name="zip" placeholder="Code Postal" class="form-control" type="text">
+                                    <input name="CP" placeholder="Code Postal" class="form-control" type="text">
                                 </div>
                                 <div class="input-group">
                                     <span class="input-group-addon">
                                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                                     </span>
-                                    <input name="city" placeholder="Ville" class="form-control" type="text">
+                                    <input name="ville" placeholder="Ville" class="form-control" type="text">
                                 </div>
                                 <div class="input-group">
                                     <span class="input-group-addon">
                                         <i class="fa fa-users fa-lg" aria-hidden="true"></i>
                                     </span>
-                                    <input type="number" class="form-control bfh-number" placeholder="Nombre de Participant">
+                                    <input type="number" name="nb-participant" class="form-control bfh-number" placeholder="Nombre de Participant">
                                 </div>
                                 <!-- <i class="fa fa-calendar-o" aria-hidden="true"></i> -->
 
@@ -401,13 +350,7 @@
                                     <span class="input-group-addon">
                                         <i class="fa fa-calendar-o" aria-hidden="true"></i>
                                     </span>
-                                    <input type='text' class="form-control" placeholder="Date de l'évènement" />
-                                        
-                                    <script type="text/javascript">
-                                        $(function () {
-                                            $('#datetimepicker1').datetimepicker();
-                                        });
-                                    </script>
+                                    <input type='text' name="date-event "class="form-control" placeholder="Date de l'évènement" />
                                  </div>
                             </div>
                             <div class="description-event">
@@ -422,7 +365,6 @@
                             <div class="col-md-4">
                                    <div class="button-envoi">
                                     <button type="submit" class="btn btn-warning">Partager l'évènement <i class="fa fa-share-alt" aria-hidden="true"></i>
-
                                     </button>
                                 </div>
                             </div>
@@ -445,7 +387,6 @@
                                         <br>Match à 90% - +</p>
                                         <div class="actions">
                                            <i class="fa fa-plus-square-o" aria-hidden="true"></i>
-                                        
                                         </div>
                                 </li>
                                 <li>
@@ -478,9 +419,7 @@
                                     <img class="avatar" src="assets/img/photo04.jpg" alt="avatar">
                                     <p class="sender">Peter B.</p>
                                     <div class="actions">
-                                        
-                                            <i class="fa fa-plus-square-o" aria-hidden="true"></i>
-                                        
+                                        <i class="fa fa-plus-square-o" aria-hidden="true"></i>
                                     </div>
                                 </li>
                                 <li>
@@ -488,9 +427,7 @@
                                     <img class="avatar" src="assets/img/photo04.jpg" alt="avatar">
                                     <p class="sender">Peter B.</p>
                                     <div class="actions">
-                                        
-                                            <i class="fa fa-plus-square-o" aria-hidden="true"></i>
-                                        
+                                         <i class="fa fa-plus-square-o" aria-hidden="true"></i>
                                     </div>
                                 </li>
                             </ul>
@@ -531,6 +468,16 @@
             $('#myInput').focus()
         })
     </script>
+    
+    
+        
+                                    <script>
+                                        $(function () {
+                                            $('#datetimepicker1').datetimepicker();
+                                        });
+                                    </script>
+    
+    
 
 </body>
 
