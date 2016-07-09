@@ -162,7 +162,7 @@ h5 {
 	/*background-image:url('../img/sep-half.png');*/
 	background-color: #5CA48D;
 	color:white;
-	height:290px;
+	height:385px;
 }
 .dash-unit-create-event {		
 	margin-bottom: 30px;
@@ -170,9 +170,46 @@ h5 {
 	/*background-image:url('../img/sep-half.png');*/
 	background-color: #F3C15C;
 	color:white;
-	height:330px;
+	height:385px;
 }
-
+.button-envoi{
+    margin-top: 50px;
+    margin-left: -80px;
+}
+.info-event{
+    width: 100%;
+    height: auto;
+    margin-top: 8px;
+}
+.info-event-bloc-1{
+    width: 48%;
+    float: left;
+}
+.info-event-bloc-2{
+    width: 48%;
+    margin-left: 2%;
+    float: left;  
+}
+.trait-event{
+    width: 150px;
+    border: 1px solid #fff;
+    margin-top: 8px;
+    margin-left: 150px;
+    
+    
+}
+.btn-rejoindre-event{
+    
+    margin-left: 145px;
+}
+.title-bloc{
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    width: 100%;
+    border-bottom: 1px dashed #fff;
+    text-transform: uppercase;
+}
 .dash-unit dtitle {
 	font-size:11px;
 	text-transform:uppercase;
@@ -476,9 +513,10 @@ digiclock {
 }
 .framemail .window {
     font-size: 0;
-    margin-top: 30px;
+    margin-top: 0px;
     overflow: hidden;
     margin-left: -19px;
+    
 }
 .framemail .window .mail li {
     /*background-color:#3d3d3d;*/
