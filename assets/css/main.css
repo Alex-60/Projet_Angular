@@ -69,8 +69,6 @@ h5 {
 	background-color: #262626;
 	color:white;
 	height:610px;
-     font-family: 'Poiret One', cursive;
-    font-size: 20px;
     text-align: center;
 }
 
@@ -90,8 +88,7 @@ h5 {
     width: 46%;
     float: left;
     margin-left: 2%;
-    margin-top: 1%;
-      
+    margin-top: 1%;  
 }
 .input-group-description {
   position: relative;
@@ -149,7 +146,7 @@ h5 {
 	height:290px;
 }
 .editer-profile{
-    margin-top: 10px;
+    margin-top: 50px;
     
 }
 .editer-profile a{
@@ -227,6 +224,10 @@ text-decoration:none;
 .info-event-bloc-1{
     width: 48%;
     float: left;
+    margin-left: 8px;
+}
+.ajouter-match{
+    float: right;
 }
 .info-event-bloc-2{
     width: 48%;
@@ -237,9 +238,11 @@ text-decoration:none;
     width: 150px;
     border: 1px solid #fff;
     margin-top: 8px;
-    margin-left: 150px;
-    
-    
+    margin-left: 150px;  
+}
+.info-profil{
+    width: 250px;
+    margin: auto;
 }
 .btn-rejoindre-event{
     
@@ -626,8 +629,6 @@ digiclock {
 }
 .framemail .window .mail li .sender {
     color: #e9e8e8;
-    
-    text-shadow: 0 1px 1px hsla(0,0%,100%,.5);
 }
 .framemail .window .mail li .message {
     color: #999;
@@ -650,11 +651,11 @@ digiclock {
 .framemail .window .mail li .actions img {
     background: none;
     display: inline-block;
-    height: 16px;
+    height: 20px;
     margin-left: 6px;
     opacity: .1;
     position: relative;
-    width: 16px;
+    width: 20px;
 }
 .framemail .window .mail li:hover .actions img {
     opacity: .25;
