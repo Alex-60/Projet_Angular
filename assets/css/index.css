@@ -217,6 +217,12 @@ body {
         color: #fff;
     }
     .slogan {
+        margin: 100px 0 0 0;
+        font-size: 40px;
+        text-align: center;
+        color: #fff;
+    }
+    .sloganConnexion {
         margin: 120px 0 0 0;
         font-size: 40px;
         text-align: center;
@@ -337,4 +343,28 @@ body {
 }
 #mailMdp{
     border-radius: 3px;
+}
+.btnDecouvre a{
+    color: #fff;
+    width: 100%;
+    display: block;
+    padding: 6px;
+}
+.btnDecouvre{
+    width: 300px;
+    height: 40px;
+    background-color: rgba(92, 164, 141, 0.8);
+    color: #fff;
+    padding: 0px;
+    border-radius: 3px;
+    font-size: 20px;
+    margin: 20px auto;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+}
+.btnDecouvre:hover {
+    background-color: rgba(92, 164, 141, 1);
+    color: #fff;
 }
