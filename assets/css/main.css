@@ -69,8 +69,6 @@ h5 {
 	background-color: #262626;
 	color:white;
 	height:610px;
-     font-family: 'Poiret One', cursive;
-    font-size: 20px;
     text-align: center;
 }
 
@@ -90,8 +88,7 @@ h5 {
     width: 46%;
     float: left;
     margin-left: 2%;
-    margin-top: 1%;
-      
+    margin-top: 1%;  
 }
 .input-group-description {
   position: relative;
@@ -147,6 +144,18 @@ h5 {
 	background-color:#F36D4C;
 	color:white;
 	height:290px;
+}
+.editer-profile{
+    margin-top: 50px;
+    
+}
+.editer-profile a{
+text-decoration:none;
+    color: black;
+}
+.editer-profile a:hover{
+text-decoration:none;
+    color: black;
 }
 .btn-ajout-friend{
     margin-top: 10px;
@@ -215,6 +224,14 @@ h5 {
 .info-event-bloc-1{
     width: 48%;
     float: left;
+    margin-left: 8px;
+}
+.ajouter-match{
+    float: right;
+}
+.nb-users{
+ width: 10px;
+    margin-left: -1px;
 }
 .info-event-bloc-2{
     width: 48%;
@@ -225,9 +242,11 @@ h5 {
     width: 150px;
     border: 1px solid #fff;
     margin-top: 8px;
-    margin-left: 150px;
-    
-    
+    margin-left: 150px;  
+}
+.info-profil{
+    width: 250px;
+    margin: auto;
 }
 .btn-rejoindre-event{
     
@@ -563,9 +582,9 @@ digiclock {
 .framemail .window .mail li:first-child {
     border-top: none;
 }
-.framemail .window .mail li:hover {
+/*.framemail .window .mail li:hover {
     background-color: #fff;
-}
+}*/
 .framemail .window .mail li:after,
 .framemail .window .mail li:before {
     /*border-left: 8px solid transparent;*/
@@ -605,6 +624,8 @@ digiclock {
     position: absolute;
     top: 6px;
     width: 36px;
+    border-radius: 50px;
+    margin-left: 3px;
 }
 .framemail .window .mail li p {
     font: 13px/24px sans-serif;
@@ -614,8 +635,6 @@ digiclock {
 }
 .framemail .window .mail li .sender {
     color: #e9e8e8;
-    
-    text-shadow: 0 1px 1px hsla(0,0%,100%,.5);
 }
 .framemail .window .mail li .message {
     color: #999;
@@ -638,11 +657,12 @@ digiclock {
 .framemail .window .mail li .actions img {
     background: none;
     display: inline-block;
-    height: 16px;
+    height: 20px;
     margin-left: 6px;
     opacity: .1;
     position: relative;
-    width: 16px;
+    width: 20px;
+    margin-top: 9px;
 }
 .framemail .window .mail li:hover .actions img {
     opacity: .25;
