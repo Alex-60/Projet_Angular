@@ -1,11 +1,9 @@
+
 .div_events{
 
 
-    height: auto;
-    
+ 
       text-align:center;
-    padding: 5px;
-
 }
 
 .div_events h2{
@@ -109,11 +107,12 @@
 .block_events_tchat{
 
     border: 1px solid ThreeDFace;
-    height: 150px;
-      text-align:center;
+    height: auto;
+    text-align:center;
     background: ThreeDFace;
     font-size: 1.2em;
     color: white;
+
     
  
 }
@@ -122,7 +121,7 @@
 
     
 border: 1px solid black;
-    height: 120px;
+    height: auto;
       text-align:center;
      margin-top: 20px;
      background: darkslateblue;
