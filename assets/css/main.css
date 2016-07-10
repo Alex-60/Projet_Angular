@@ -622,7 +622,7 @@ digiclock {
     height: 36px;
     /*left: 12px;*/
     position: absolute;
-    top: 6px;
+    top: 16px;
     width: 36px;
     border-radius: 50px;
     margin-left: 3px;
@@ -640,7 +640,7 @@ digiclock {
     color: #999;
     overflow: hidden;  
     text-overflow: ellipsis;
-    top: 21px;  
+    top: 18px;  
     white-space: nowrap;
 }
 .framemail .window .mail li .message strong {
