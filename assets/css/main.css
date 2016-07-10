@@ -738,8 +738,10 @@ digiclock {
  */
 .info-aapl {
   text-align: center;
-
 }
+body {
+            padding-top: 60px;
+        }
 .info-aapl ul {
   margin-left:30%;
 
