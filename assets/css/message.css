@@ -140,7 +140,10 @@ textarea{
         background-color: #f0ad4e;
         margin: 20px auto 0;
     }
-    .editProfilForm{
-        height: 970px;
-    }
+}
+
+.txtMessage{
+    background:#fff;
+    color:#f36d4c;
+    padding:10px;
 }
