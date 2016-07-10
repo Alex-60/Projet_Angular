@@ -215,6 +215,19 @@ text-decoration:none;
     margin-top: 25px;
     margin-left: -100px;
 }
+.button-envoi-profil{
+    margin-top: 45px;  
+}
+.btn-warning-event{
+    background-color: #F36D4C;
+    border-color: #F36D4C;
+    color: #fff;
+}
+.btn-warning-event:hover{
+    background-color: #F36D4C;
+    border-color: #F36D4C;
+    color: #fff;
+}
 .info-event{
     width: 100%;
     height: auto;
