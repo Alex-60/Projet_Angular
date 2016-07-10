@@ -18,7 +18,7 @@ body {
 }
 .formulaire-recherche{
     width: 100%;
-    height: auto;
+    height: 216px;
     background-color: #F3C15C;
     margin: auto;
     display: block;
@@ -37,6 +37,20 @@ input[type=submit] {
     padding: 8px 28px 10px 26px;
     -moz-border-radius: 4px;
     border-radius: 4px;
+    width: auto;
+    margin: auto;
+    display: block;
+}
+input[type=submit]:hover{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    background: #5CA48D;
+    color: #fff;
+    border: none;
+    padding: 8px 28px 10px 26px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    width: auto;
 }
 .bloc-gauche{
     width: 46%;
