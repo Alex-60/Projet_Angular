@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>#FuturPote</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/font-style.css" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+
+    <script src="https://use.fontawesome.com/1ac1a14030.js"></script>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+        }
+        
+        .editProfil{
+            margin-bottom: 30px;
+            padding-bottom:10px;
+            /*background-image:url('../img/sep-half.png');*/
+            background-color: #F3C15C;
+            color:white;
+            height:auto;
+        }
+        .editProfilForm{
+            width: 100%;
+            height: 910px;
+            margin: 8px auto 20px auto;
+            padding: 20px;
+        }
+        .editProfil .field input, .editProfil textarea{
+            background-color: #fff;
+            width: 100%;
+        }
+        input[type="number"] {
+            border: medium none;
+            box-shadow: none;
+            display: block;
+            font-size: 13px;
+            height: 30px;
+            line-height: 18px;
+            margin: 0 0 18px;
+            padding: 0;
+            text-indent: 18px;
+        }
+        textarea{
+            height: 100px;
+        }
+        .btnCoul {
+            background-color: #f0ad4e !important;
+            width: 100%;
+        }
+        .btnCoul:hover {
+            background-color: #ed9c28 !important;
+            width: 100%;
+        }
+        .centerBloc{
+            float: none;
+            margin: auto;
+        }
+        .btnProfil1{
+            width: 150px;
+            height: 40px;
+            color: #fff;
+            float: left;
+            display: block;
+            padding: 10px;
+            text-align: center;
+            background-color: #f0ad4e;
+            margin: 20px 0 0 0;
+        }
+        .btnProfil1:hover, .btnProfil2:hover {
+            background-color: #ed9c28;
+            color: #fff;
+        }
+        .btnProfil2{
+            width: 150px;
+            height: 40px;
+            color: #fff;
+            float: right;
+            display: block;
+            padding: 10px;
+            text-align: center;
+            background-color: #f0ad4e;
+            margin: 20px 0 10px 0;
+        }
+        @media (max-width: 360px) {
+            .btnProfil1{
+                width: 150px;
+                height: 40px;
+                color: #fff;
+                float: none;
+                display: block;
+                padding: 10px;
+                text-align: center;
+                background-color: #f0ad4e;
+                margin: 20px auto 0;
+            }
+            .btnProfil2{
+                width: 150px;
+                height: 40px;
+                color: #fff;
+                float: none;
+                display: block;
+                padding: 10px;
+                text-align: center;
+                background-color: #f0ad4e;
+                margin: 20px auto 0;
+            }
+            .editProfilForm{
+                height: 970px;
+            }
+        }
+    </style>
+
+    <!-- Google Fonts call. Font Used Open Sans & Raleway -->
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,300" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION MENU -->
+    <div class="navbar-nav navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">#FuturPote</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="accueil.html"><i class="icon-home icon-white"></i>Accueil</a>
+                    </li>
+                    <li><a href="profil.html"><i class="icon-folder-open icon-white"></i>Profil</a>
+                    </li>
+                    <li><a href="ajouter_amis.html"><i class="icon-calendar icon-white"></i>Ajouter des amis</a>
+                    </li>
+                    <li><a href="tchat.html"><i class="icon-th icon-white"></i> Tchat</a>
+                    </li>
+                    <li><a href="evenement.html"><i class="icon-lock icon-white"></i> Evènement</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-7 col-md-5 col-lg-4 centerBloc">
+                <div class="editProfil">
+                    <div class="title-bloc">
+                        <dtitle>Éditer mon profil</dtitle>
+                    </div>
+                    <div class="editProfilForm">
+                            <form class="edit_profile" id="edit_profile_5" action="/profiles/5" accept-charset="UTF-8" method="post">
+                                <input name="utf8" type="hidden" value="&#x2713;" />
+                                <input type="hidden" name="_method" value="patch" />
+                                <input type="hidden" name="authenticity_token" value="+JPBzcEHCtYRuv5dcrIms7oGKPUjnnjtsQo97N6lQWNwLYHCxxGtYPiDA+oNE7ajrXD+id4onFq1C2CqsK4ehg==" />
+
+                                <div class="field">
+                                    <label for="profile_first_name">Prénom</label>
+                                    <input type="text" name="profile[first_name]" id="profile_first_name" />
+                                </div>
+
+                                <div class="field">
+                                    <label for="profile_last_name">Nom</label>
+                                    <input type="text" name="profile[last_name]" id="profile_last_name" />
+                                </div>
+
+                                <div class="field">
+                                    <label for="profile_age">Age</label>
+                                    <input type="number" name="profile[age]" id="profile_age" />
+                                </div>
+
+                                <div class="field">
+                                    <label for="profile_sex">Sexe</label>
+                                    <input type="text" name="profile[sex]" id="profile_sex" />
+                                </div>
+
+                                <div class="field">
+                                    <label for="profile_studies">Étude</label>
+                                    <input type="text" name="profile[studies]" id="profile_studies" />
+                                </div>
+
+                                <div class="field">
+                                    <label for="profile_years_of_studies">Nombre d'années d'études</label>
+                                    <input type="number" name="profile[years_of_studies]" id="profile_years_of_studies" />
+                                </div>
+
+                                <div class="field">
+                                    <label for="profile_loisirs">Loisirs</label>
+                                    <input type="text" name="profile[loisirs]" id="profile_loisirs" />
+                                </div>
+
+                                <div class="field">
+                                    <label for="profile_school_mail">Email de votre école</label>
+                                    <input type="text" name="profile[school_mail]" id="profile_school_mail" />
+                                </div>
+
+                                <div class="field">
+                                    <label for="profile_phone">Numéro de téléphone</label>
+                                    <input type="text" name="profile[phone]" id="profile_phone" />
+                                </div>
+
+                                <div class="field">
+                                    <label for="profile_introduction">Présentation personnelle</label>
+                                    <textarea name="profile[introduction]" id="profile_introduction" rows="2">
+                                    </textarea>
+                                </div>
+
+
+                                <div class="actions">
+                                    <input type="submit" class="btnCoul btn btn-warning" name="commit" value="Mettre à jour le profil"/>
+                                </div>
+                            </form>
+
+                            <a class="btnProfil1" href="/profiles/5">Voir mon profil</a>
+                            <a class="btnProfil2" href="/profiles">Retour</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+    <!-- NOTY JAVASCRIPT -->
+    <script type="text/javascript" src="assets/js/noty/jquery.noty.js"></script>
+    <script type="text/javascript" src="assets/js/noty/layouts/top.js"></script>
+    <script type="text/javascript" src="assets/js/noty/layouts/topLeft.js"></script>
+    <script type="text/javascript" src="assets/js/noty/layouts/topRight.js"></script>
+    <script type="text/javascript" src="assets/js/noty/layouts/topCenter.js"></script>
+
+    <!-- You can add more layouts if you want -->
+    <script type="text/javascript" src="assets/js/noty/themes/default.js"></script>
+</body>
+
+</html>
