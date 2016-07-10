@@ -19,14 +19,6 @@ body {
     min-width: 100%;
 }
 
-@media (max-width: 767px) {}
-
-@media (min-width: 768px) and (max-width: 991px) {}
-
-@media (min-width: 992px) and (max-width: 1199px) {}
-
-@media (min-width: 1200px) {}
-
 @media (max-width: 767px) {
     .menuAccueil {
         width: auto;
@@ -84,7 +76,7 @@ body {
         background-color: rgb(41, 41, 41);
         color: #fff;
     }
-    .slogan {
+    .slogan, .sloganconnexion {
         margin-top: 30px;
         font-size: 30px;
         text-align: center;
@@ -222,7 +214,7 @@ body {
         text-align: center;
         color: #fff;
     }
-    .sloganConnexion {
+    .sloganconnexion {
         margin: 120px 0 0 0;
         font-size: 40px;
         text-align: center;
