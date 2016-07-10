@@ -14,23 +14,23 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/font-style.css" rel="stylesheet">
-    <link href="assets/css/flexslider.css" rel="stylesheet">
+    <link href="assets/css/profile.css" rel="stylesheet">
 
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 
     <script src="https://use.fontawesome.com/1ac1a14030.js"></script>
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-    
-    
-   
 
-    
 
-    
+
+
+
+
+
 
     <!-- Le fav and touch icons -->
-    
+
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
@@ -75,7 +75,7 @@
             <!-- USER PROFILE BLOCK -->
             <div class="col-sm-4 col-lg-4">
                 <div class="dash-unit-profil">
-                   <div class="title-bloc">
+                    <div class="title-bloc">
                         <dtitle>Mon Profil</dtitle>
                     </div>
                     <div class="thumbnail">
@@ -85,14 +85,14 @@
                     </div>
                     <br>
                     <div class="speudo">
-                        <p>Pseudo<br>
-                            Profil certifié
+                        <p>Pseudo
+                            <br>Profil certifié
                         </p>
                     </div>
                     <br>
                     <div class="info-profil">
                         Prenom Nom
-                        <br>Age ans 
+                        <br>Age ans
                         <br>Originaire de chantilly
                         <br>Ville actuelle Paris
                         <br>
@@ -101,8 +101,10 @@
                         <br>
                         <br>Nombre d'amis : 45
                         <br>Evènement participé : 12
-                        <br> Évènnement créé : 5
-                        <button class="editer-profile"><a href="edit-profil.html">Editer mon profil</a></button>
+                        <br>Évènnement créé : 5
+                        <div class="actions">
+                            <input type="submit" class="btnCoul btn btn-warning edition-profile" name="commit" value="Editer mon profil" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -112,30 +114,36 @@
                         <dtitle>Les évènements à venir</dtitle>
                     </div>
                     <div class="info-event">
-                       <div class="info-event-bloc-1">
-                            <p>Nom de l'évènement<br>
-                            Adresse de l'évènement<br>
-                            Code postal - Ville</p>
+                        <div class="info-event-bloc-1">
+                            <p>Nom de l'évènement
+                                <br>Adresse de l'évènement
+                                <br>Code postal - Ville</p>
                         </div>
                         <div class="info-event-bloc-2">
-                            Date de l'évènement<br>
-                            Nombre de place<br>
+                            Date de l'évènement
+                            <br>Nombre de place
+                            <br>
                         </div>
-                            <button class="btn-rejoindre-event">Rejoindre l'évènement</button>
-                            <div class="trait-event" ></div>  
-                      </div>
-                      <div class="info-event">
-                       <div class="info-event-bloc-1">
-                            <p>Nom de l'évènement<br>
-                            Adresse de l'évènement<br>
-                            Code postal - Ville</p>
+                       <div class="button-envoi">
+                                    <button type="submit" class="btn btn-warning">Rejoindre l'évènement
+                                </div>
+                        <div class="trait-event"></div>
+                    </div>
+                    <div class="info-event">
+                        <div class="info-event-bloc-1">
+                            <p>Nom de l'évènement
+                                <br>Adresse de l'évènement
+                                <br>Code postal - Ville</p>
                         </div>
                         <div class="info-event-bloc-2">
-                            Date de l'évènement<br>
-                            Nombre de place<br>
+                            Date de l'évènement
+                            <br>Nombre de place
+                            <br>
                         </div>
-                            <button class="btn-rejoindre-event">Rejoindre l'évènement</button>
-                      </div>
+<div class="button-envoi">
+                                    <button type="submit" class="btn btn-warning">Rejoindre l'évènement 
+                                    </button>
+                                </div>                    </div>
                 </div>
             </div>
             <div class="col-sm-3 col-lg-3">
@@ -186,7 +194,7 @@
                                         </a>
                                     </div>
                                 </li>
-                                
+
                             </ul>
                         </div>
                     </div>
@@ -198,31 +206,38 @@
                         <dtitle>Mes évènements</dtitle>
                     </div>
                     <div class="info-event">
-                       <div class="info-event-bloc-1">
-                            <p>Nom de l'évènement<br>
-                            Adresse de l'évènement<br>
-                            Code postal - Ville</p>
+                        <div class="info-event-bloc-1">
+                            <p>Nom de l'évènement
+                                <br>Adresse de l'évènement
+                                <br>Code postal - Ville</p>
                         </div>
                         <div class="info-event-bloc-2">
-                            Date de l'évènement<br>
-                            Nombre de place<br>
+                            Date de l'évènement
+                            <br>Nombre de place
+                            <br>
                         </div>
-                            <button class="btn-rejoindre-event">Annuler participation</button>
-                            <div class="trait-event" ></div>  
-                      </div>
-                      <div class="info-event">
-                       <div class="info-event-bloc-1">
-                            <p>Nom de l'évènement<br>
-                            Adresse de l'évènement<br>
-                            Code postal - Ville</p>
+                        <div class="button-envoi">
+                                    <button type="submit" class="btn btn-warning">Annuler Participation 
+                                    </button>
+                                </div>
+                        <div class="trait-event"></div>
+                    </div>
+                    <div class="info-event">
+                        <div class="info-event-bloc-1">
+                            <p>Nom de l'évènement
+                                <br>Adresse de l'évènement
+                                <br>Code postal - Ville</p>
                         </div>
                         <div class="info-event-bloc-2">
-                            Date de l'évènement<br>
-                            Nombre de place<br>
+                            Date de l'évènement
+                            <br>Nombre de place
+                            <br>
                         </div>
-                            <button class="btn-rejoindre-event">Annuler participation</button>
-                             
-                      </div>
+                        <div class="button-envoi">
+                                    <button type="submit" class="btn btn-warning">Annuler Participation 
+                                    </button>
+                                </div>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-3 col-lg-3">
@@ -238,8 +253,8 @@
                                     <i class="unreada"></i>
                                     <img class="avatar" src="assets/img/photo01.jpeg" alt="avatar">
                                     <p class="auteur">Adam W. - 6 messages</p>
-                                    <p class="message"> Hey comment tu vas ? <br>
-                                                        recu le 12/12/2012
+                                    <p class="message">Hey comment tu vas ?
+                                        <br>recu le 12/12/2012
                                     </p>
                                     <div class="actions">
                                         <a href="message.html">
@@ -251,8 +266,8 @@
                                     <i class="unreada"></i>
                                     <img class="avatar" src="assets/img/photo01.jpeg" alt="avatar">
                                     <p class="auteur">Adam W. - 6 messages</p>
-                                    <p class="message"> Hey comment tu vas ? <br>
-                                                        recu le 12/12/2012
+                                    <p class="message">Hey comment tu vas ?
+                                        <br>recu le 12/12/2012
                                     </p>
                                     <div class="actions">
                                         <a href="message.html">
@@ -264,8 +279,8 @@
                                     <i class="unreada"></i>
                                     <img class="avatar" src="assets/img/photo01.jpeg" alt="avatar">
                                     <p class="auteur">Adam W. - 6 messages</p>
-                                    <p class="message"> Hey comment tu vas ? <br>
-                                                        recu le 12/12/2012
+                                    <p class="message">Hey comment tu vas ?
+                                        <br>recu le 12/12/2012
                                     </p>
                                     <div class="actions">
                                         <a href="message.html">
@@ -277,8 +292,8 @@
                                     <i class="unreada"></i>
                                     <img class="avatar" src="assets/img/photo01.jpeg" alt="avatar">
                                     <p class="auteur">Adam W. - 6 messages</p>
-                                    <p class="message"> Hey comment tu vas ? <br>
-                                                        recu le 12/12/2012
+                                    <p class="message">Hey comment tu vas ?
+                                        <br>recu le 12/12/2012
                                     </p>
                                     <div class="actions">
                                         <a href="message.html">
@@ -307,25 +322,25 @@
                                     <span class="input-group-addon">
                                         <i class="fa fa-bookmark-o" aria-hidden="true"></i>
                                     </span>
-                                    <input name="first_name" placeholder="Nom de l'évènement" class="form-control" type="text">
+                                    <input type="text" name="first_name" placeholder="Nom de l'évènement" class="form-control" type="text">
                                 </div>
                                 <div class="input-group">
                                     <span class="input-group-addon">
                                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                                     </span>
-                                    <input name="address" placeholder="Adresse de l'évènement" class="form-control" type="text">
+                                    <input type="text" name="address" placeholder="Adresse de l'évènement" class="form-control" type="text">
                                 </div>
                                 <div class="input-group">
                                     <span class="input-group-addon">
                                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                                     </span> 
-                                    <input name="CP" placeholder="Code Postal" class="form-control" type="text">
+                                    <input type="number" name="CP" placeholder="Code Postal" class="form-control" type="text">
                                 </div>
                                 <div class="input-group">
                                     <span class="input-group-addon">
                                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                                     </span>
-                                    <input name="ville" placeholder="Ville" class="form-control" type="text">
+                                    <input type="text" name="ville" placeholder="Ville" class="form-control" type="text">
                                 </div>
                                 <div class="input-group">
                                     <span class="input-group-addon">
@@ -340,8 +355,8 @@
                                     <span class="input-group-addon">
                                         <i class="fa fa-calendar-o" aria-hidden="true"></i>
                                     </span>
-                                    <input type='text' name="date-event "class="form-control" placeholder="Date de l'évènement" />
-                                 </div>
+                                    <input type='text' name="date-event " class="form-control" placeholder="Date de l'évènement" />
+                                </div>
                             </div>
                             <div class="description-event">
                                 <div class="input-group-description">
@@ -353,7 +368,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                   <div class="button-envoi">
+                                <div class="button-envoi">
                                     <button type="submit" class="btn btn-warning">Partager l'évènement <i class="fa fa-share-alt" aria-hidden="true"></i>
                                     </button>
                                 </div>
@@ -364,9 +379,9 @@
             </div>
             <div class="col-sm-3 col-lg-3">
                 <div class="dash-unit-match">
-                   <div class="title-bloc">
-                       <dtitle>Vos futurs amis</dtitle>
-                   </div>
+                    <div class="title-bloc">
+                        <dtitle>Vos futurs amis</dtitle>
+                    </div>
                     <div class="framemail">
                         <div class="window">
                             <ul class="mail">
@@ -375,17 +390,17 @@
                                     <img class="avatar" src="assets/img/photo01.jpeg" alt="avatar">
                                     <p class="sender">Adam W. - Match à 100%
                                         <div class="actions">
-                                        <a>
-                                            <img src="assets/img/ajouter-friend.png" alt="reply">
-                                        </a>
-                                    </div>
+                                            <a>
+                                                <img src="assets/img/ajouter-friend.png" alt="reply">
+                                            </a>
+                                        </div>
                                     </p>
-                                        
+
                                 </li>
                                 <li>
                                     <i class="read"></i>
                                     <img class="avatar" src="assets/img/photo02.jpg" alt="avatar">
-                                    <p class="sender">Dan E. Match à 100% </p>
+                                    <p class="sender">Dan E. Match à 100%</p>
                                     <div class="actions">
                                         <a>
                                             <img src="assets/img/ajouter-friend.png" alt="reply">
@@ -422,7 +437,7 @@
                                         </a>
                                     </div>
                                 </li>
-                                
+
                             </ul>
                         </div>
                     </div>
@@ -432,11 +447,11 @@
     </div>
 
 
-    
 
-    
-    
-    
+
+
+
+
 </body>
 
 </html>

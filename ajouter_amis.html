@@ -5,15 +5,16 @@
     <meta charset="utf-8">
     <title>#FuturPote</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
 
-    
+
+
 
     <!-- Le styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/font-style.css" rel="stylesheet">
     <link href="assets/css/flexslider.css" rel="stylesheet">
+    <link href="assets/css/ajout-friend.css" rel="stylesheet">
 
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 
@@ -24,7 +25,7 @@
 
 
     <!-- Le fav and touch icons -->
-    
+
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
@@ -33,9 +34,9 @@
     <!-- Google Fonts call. Font Used Open Sans & Raleway -->
     <link href="http://fonts.googleapis.com/css?family=Raleway:400,300" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-    
-    
-    
+
+
+
     <link href='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js'>
 </head>
 
@@ -54,7 +55,7 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    
+
                     <li><a href="profil.html"><i class="icon-folder-open icon-white"></i>Profil</a>
                     </li>
                     <li><a href="ajouter_amis.html"><i class="icon-calendar icon-white"></i>Ajouter des amis</a>
@@ -70,103 +71,130 @@
     <div class="container">
         <!-- FIRST ROW OF BLOCKS -->
         <div class="row">
-           <input type="search" ng-model="filtre">
-                <ul>
-                    <li ng-repeat="element in tableau | filter : filtre">{{element}}</li>
-                </ul> 
+            <div class="col-md-8 centerBloc">
+                <div class="formulaire-recherche">
+                    <form class="" id="" action="" accept-charset="UTF-8" method="post">
+                        <div class="bloc-gauche">
+                            <div class="field">
+                                <input type="text" name="" id="" placeholder="Prenom" />
+                            </div>
+                            <div class="field">
+                                <input type="number" name="" id="" placeholder="Age" />
+                            </div>
+                            <div class="field">
+                                <input type="text" name="" id="" placeholder="Sexe" />
+                            </div>
+                        </div>
+                        <div class="bloc-droit">
+                            <div class="field">
+                                <input type="text" name="" id="" placeholder="Etude" />
+                            </div>
+                            <div class="field">
+                                <input type="number" name="" id="" placeholder="Année d'études" />
+                            </div>
+                            <div class="field">
+                                <input type="text" name="profile[loisirs]" id="profile_loisirs" placeholder="Loisirs" />
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <input type="submit" class="btnCoul btn btn-warning" name="commit" value="J'ai de la chance" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
         </div>
+        
         <div class="row">
             <div class="col-sm-3 col-lg-3">
                 <div class="dash-unit-ajout-friend">
                     <div class="title-bloc">
-                        <dtitle>Match à </dtitle>
+                        <dtitle>Match à</dtitle>
                     </div>
-                        <ul class="ajouter-friend">
-                            <li>
-                                <i class="unread"></i>
-                                    <img class="avatar" src="assets/img/photo01.jpeg" alt="avatar">
-                                        <p class="sender">
-                                            Adam W. - 25 ans<br>
-                                            Ville actuelle : Paris <br>
-                                            centre d'intérêts : 
-                                            Sport - Cinéma - Jeux-vidéo <br>
-                                            <button class="btn-ajout-friend"> Ajouter</button>
-                                        </p>
-                                 </li>
-                             </ul>
+                    <ul class="ajouter-friend">
+                        <li>
+                            <i class="unread"></i>
+                            <img class="avatar" src="assets/img/photo01.jpeg" alt="avatar">
+                            <p class="sender">
+                                Adam W. - 25 ans
+                                <br>Ville actuelle : Paris
+                                <br>centre d'intérêts : Sport - Cinéma - Jeux-vidéo
+                                <br>
+                               <div class="actions">
+                            <input type="submit" class="btnCoul btn btn-warning" name="commit" value="Ajouter" />
                         </div>
-                    </div>
-                    <div class="col-sm-3 col-lg-3">
-                <div class="dash-unit-ajout-friend">
-                    <div class="title-bloc">
-                        <dtitle>Match à </dtitle>
-                    </div>
-                        <ul class="ajouter-friend">
-                            <li>
-                                <i class="unread"></i>
-                                    <img class="avatar" src="assets/img/photo01.jpeg" alt="avatar">
-                                        <p class="sender">
-                                            Adam W. - 25 ans<br>
-                                            Ville actuelle : Paris <br>
-                                            centre d'intérêts : 
-                                            Sport - Cinéma - Jeux-vidéo <br>
-                                            <button class="btn-ajout-friend"> Ajouter</button>
-                                        </p>
-                                 </li>
-                             </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-lg-3">
-                <div class="dash-unit-ajout-friend">
-                    <div class="title-bloc">
-                        <dtitle>Match à </dtitle>
-                    </div>
-                        <ul class="ajouter-friend">
-                            <li>
-                                <i class="unread"></i>
-                                    <img class="avatar" src="assets/img/photo01.jpeg" alt="avatar">
-                                        <p class="sender">
-                                            Adam W. - 25 ans<br>
-                                            Ville actuelle : Paris <br>
-                                            centre d'intérêts : 
-                                            Sport - Cinéma - Jeux-vidéo <br>
-                                            <button class="btn-ajout-friend"> Ajouter</button>
-                                        </p>
-                                 </li>
-                             </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-lg-3">
-                <div class="dash-unit-ajout-friend">
-                    <div class="title-bloc">
-                        <dtitle>Match à </dtitle>
-                    </div>
-                        <ul class="ajouter-friend">
-                            <li>
-                                <i class="unread"></i>
-                                    <img class="avatar" src="assets/img/photo01.jpeg" alt="avatar">
-                                        <p class="sender">
-                                            Adam W. - 25 ans<br>
-                                            Ville actuelle : Paris <br>
-                                            centre d'intérêts : 
-                                            Sport - Cinéma - Jeux-vidéo <br>
-                                            <button class="btn-ajout-friend"> Ajouter</button>
-                                        </p>
-                                 </li>
-                             </ul>
-                        </div>
-                    </div>
-                 </div>
-         <div class="row">
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div class="col-sm-3 col-lg-3">
-                
-             </div>
-         </div>
+                <div class="dash-unit-ajout-friend">
+                    <div class="title-bloc">
+                        <dtitle>Match à</dtitle>
+                    </div>
+                    <ul class="ajouter-friend">
+                        <li>
+                            <i class="unread"></i>
+                            <img class="avatar" src="assets/img/photo01.jpeg" alt="avatar">
+                            <p class="sender">
+                                Adam W. - 25 ans
+                                <br>Ville actuelle : Paris
+                                <br>centre d'intérêts : Sport - Cinéma - Jeux-vidéo
+                                <br>
+<div class="actions">
+                            <input type="submit" class="btnCoul btn btn-warning" name="commit" value="Ajouter" />
+                        </div>                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3 col-lg-3">
+                <div class="dash-unit-ajout-friend">
+                    <div class="title-bloc">
+                        <dtitle>Match à</dtitle>
+                    </div>
+                    <ul class="ajouter-friend">
+                        <li>
+                            <i class="unread"></i>
+                            <img class="avatar" src="assets/img/photo01.jpeg" alt="avatar">
+                            <p class="sender">
+                                Adam W. - 25 ans
+                                <br>Ville actuelle : Paris
+                                <br>centre d'intérêts : Sport - Cinéma - Jeux-vidéo
+                                <br>
+<div class="actions">
+                            <input type="submit" class="btnCoul btn btn-warning" name="commit" value="Ajouter" />
+                        </div>                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3 col-lg-3">
+                <div class="dash-unit-ajout-friend">
+                    <div class="title-bloc">
+                        <dtitle>Match à</dtitle>
+                    </div>
+                    <ul class="ajouter-friend">
+                        <li>
+                            <i class="unread"></i>
+                            <img class="avatar" src="assets/img/photo01.jpeg" alt="avatar">
+                            <p class="sender">
+                                Adam W. - 25 ans
+                                <br>Ville actuelle : Paris
+                                <br>centre d'intérêts : Sport - Cinéma - Jeux-vidéo
+                                <br>
+<div class="actions">
+                            <input type="submit" class="btnCoul btn btn-warning" name="commit" value="Ajouter" />
+                        </div>                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 
 
-    
-    
+
+
 
 </body>
 
