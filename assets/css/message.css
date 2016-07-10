@@ -1,0 +1,146 @@
+body {
+    padding-top: 60px;
+}
+
+.editProfil{
+    margin-bottom: 30px;
+    padding-bottom:10px;
+    /*background-image:url('../img/sep-half.png');*/
+    background-color: #F36D4C;
+    color:white;
+    height:auto;
+}
+.editProfilForm{
+    width: 100%;
+    height: 410px;
+    margin: 8px auto 20px auto;
+    padding: 20px;
+}
+.editProfil .field input, .editProfil textarea{
+    background-color: #fff;
+    width: 100%;
+}
+input[type="number"] {
+    border: medium none;
+    box-shadow: none;
+    display: block;
+    font-size: 13px;
+    height: 30px;
+    line-height: 18px;
+    margin: 0 0 18px;
+    padding: 0;
+    text-indent: 18px;
+}
+
+
+
+
+
+.nav navbar-nav ul
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.nav navbar-nav {
+/* on centre le menu dans la page */
+    text-align: center;
+}
+.nav navbar-nav li {
+/* on place les liens du menu horizontalement */
+    display: inline-block;
+}
+.nav navbar-nav ul li {
+/* on enlève ce comportement pour les liens du sous menu */
+    display: inherit;
+}
+.nav navbar-nav a {
+    text-decoration: none;
+    display: block;
+	color:#000;
+}
+.nav navbar-nav ul {
+    position: absolute;
+/* on cache les sous menus complètement sur la gauche */
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
+}
+.nav navbar-nav li:hover ul {
+/* Au survol des li du menu on replace les sous menus */
+    left: auto;
+}
+
+
+
+
+
+
+textarea{
+    height: 100px;
+}
+.btnCoul {
+    background-color: #f0ad4e !important;
+    width: 100%;
+}
+.btnCoul:hover {
+    background-color: #ed9c28 !important;
+    width: 100%;
+}
+.centerBloc{
+    float: none;
+    margin: auto;
+}
+.btnProfil1{
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    float: left;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: #f0ad4e;
+    margin: 20px 0 0 0;
+}
+.btnProfil1:hover, .btnProfil2:hover {
+    background-color: #ed9c28;
+    color: #fff;
+}
+.btnProfil2{
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    float: right;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: #f0ad4e;
+    margin: 20px 0 10px 0;
+}
+@media (max-width: 360px) {
+    .btnProfil1{
+        width: 150px;
+        height: 40px;
+        color: #fff;
+        float: none;
+        display: block;
+        padding: 10px;
+        text-align: center;
+        background-color: #f0ad4e;
+        margin: 20px auto 0;
+    }
+    .btnProfil2{
+        width: 150px;
+        height: 40px;
+        color: #fff;
+        float: none;
+        display: block;
+        padding: 10px;
+        text-align: center;
+        background-color: #f0ad4e;
+        margin: 20px auto 0;
+    }
+    .editProfilForm{
+        height: 970px;
+    }
+}
