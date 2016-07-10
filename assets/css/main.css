@@ -209,7 +209,6 @@ text-decoration:none;
 	padding-bottom:10px;
 	/*background-image:url('../img/sep-half.png');*/
 	background-color: #F3C15C;
-	color:white;
 	height:385px;
 }
 .button-envoi{
@@ -259,6 +258,7 @@ text-decoration:none;
     width: 100%;
     border-bottom: 1px dashed #fff;
     text-transform: uppercase;
+    color: #fff;
 }
 .dash-unit dtitle {
 	font-size:11px;
