@@ -314,6 +314,7 @@ body {
     background-image: url("../img/logo_facebook.png");
     background-repeat: no-repeat;
     cursor: pointer;
+    display: block;
 }
 .logoFacebook:hover{
     background-image: url("../img/logo_facebook_hover.png");
