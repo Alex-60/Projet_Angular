@@ -58,8 +58,12 @@
     margin-top: 0px;
     background: #f3c15c;
     color: white;
-    padding: 15px 15px 12px 15px;
+    padding: 10px;
     font-size: 1.2em;
+}
+
+.block_events_info p {
+    text-align: center;
 }
 
 .block_events_tchat {
@@ -77,11 +81,4 @@
     margin-top: 20px;
     background: #f3c15c;
     padding-top: 10px;
-}
-.block_events_info hr{
-    margin: 10px 0;
-}
-.eventAdresse, .eventNbrPlace, .eventPrix{
-    font-size: 15px;
-    text-align: left;
 }
