@@ -2,7 +2,7 @@
     text-align: center;
 }
 
-.div_events h2 {
+.div_events h2, .div_events2 h2 {
     background: #f3c15c;
     color: white;
     padding: 20px;
@@ -10,26 +10,17 @@
     font-weight: 300;
     font-size: 21px;
     margin-bottom: 0px;
-    border-bottom: 1px dashed #fff;
-}
-
-.div_events2 h2 {
-    text-align: center;
-    background: #F36D4C;
-    color: white;
-    text-align: center;
-    padding: 20px;
 }
 
 .div_events2 {
-    height: 500px;
+    height: auto;
     text-align: center;
 }
 
 .block_events {
+    border-top: 1px dashed #fff;
     height: 200px;
     text-align: center;
-    margin-bottom: 20px;
     background: #f3c15c;
 }
 
@@ -58,30 +49,32 @@
     margin-top: 0px;
     background: #f3c15c;
     color: white;
-    padding: 15px 15px 12px 15px;
+    padding: 15px 15px 11px 15px;
     font-size: 1.2em;
 }
 
 .block_events_tchat {
-    border: 1px solid ThreeDFace;
-    height: auto;
+    border-top: 1px dashed #fff;
+    height: 145px;
     text-align: center;
-    background: ThreeDFace;
-    font-size: 1.2em;
-    color: white;
+    background: #f3c15c;
 }
 
 .block_events_tchat_x {
     height: auto;
-    text-align: center;
-    margin-top: 20px;
+    margin-top: 0px;
     background: #f3c15c;
-    padding-top: 10px;
+    color: white;
+    padding: 15px 15px 11px 15px;
+    font-size: 1.2em;
 }
-.block_events_info hr{
+.block_events_info hr, .block_events_tchat_x hr{
     margin: 10px 0;
 }
 .eventAdresse, .eventNbrPlace, .eventPrix{
     font-size: 15px;
-    text-align: left;
+    text-align: left !important;
+}
+.eventNbrPart{
+    font-size: 15px;
 }
