@@ -213,7 +213,7 @@ text-decoration:none;
 }
 .button-envoi{
     margin-top: 25px;
-    margin-left: 322px;
+    margin-left: -100px;
 }
 .info-event{
     width: 100%;
@@ -633,8 +633,12 @@ digiclock {
     position: absolute;
     top: 3px;
 }
+
 .framemail .window .mail li .sender {
     color: #e9e8e8;
+}
+.edition-profile{
+    margin-top: 2%;
 }
 .framemail .window .mail li .message {
     color: #999;
